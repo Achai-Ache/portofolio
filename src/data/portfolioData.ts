@@ -1,7 +1,7 @@
 import type { ProfileData, Project, TechItem, ExperienceItem } from '../types/portfolio';
 
 export const profileData: ProfileData = {
-  name: 'Reyhand Astra',
+  name: 'Achai Astra',
   tagline: 'Full-Stack & Mobile Developer',
   education: 'Teknik Informatika (S1) • Universitas Widyatama',
   status: 'Available for Engineering Roles & Projects',
@@ -18,7 +18,7 @@ export const profileData: ProfileData = {
   contact: {
     email: 'ryhndastra@gmail.com',
     github: 'https://github.com/ryhndastra',
-    linkedin: 'https://linkedin.com/in/reyhand-astra',
+    linkedin: 'https://linkedin.com/in/achai-astra',
     location: 'Indonesia'
   }
 };
