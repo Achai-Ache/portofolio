@@ -156,7 +156,7 @@ export const EditorialProfile: React.FC = () => {
         >
           <div className="max-w-2xl">
             <span className="text-xs font-mono font-bold uppercase tracking-[0.25em] text-[#8c6239] block mb-2">
-              Profil &amp; Keahlian
+              Profil Biologi
             </span>
             <h2 className="text-3xl sm:text-5xl font-black text-[#0f172a] tracking-tight leading-[1.08]">
               Biology Student &amp; Environmental Science Enthusiast
@@ -172,7 +172,7 @@ export const EditorialProfile: React.FC = () => {
             />
 
             <p className="max-w-xs text-xs text-[#475569] leading-relaxed">
-              Mahasiswa Biologi Universitas Airlangga dengan minat pada mikrobiologi, bioteknologi, ekologi, dan analisis lingkungan. Memiliki pengalaman dalam kegiatan penelitian, pemetaan spasial, pengelolaan data, serta dokumentasi kegiatan ilmiah.
+              Mahasiswa Biologi Universitas Airlangga yang tertarik pada ekologi, mikrobiologi, biodiversitas, dan ilmu lingkungan. Saya senang mempelajari keterkaitan organisme dengan ekosistemnya.
             </p>
           </div>
         </motion.div>

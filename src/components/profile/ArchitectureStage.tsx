@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Terminal, Cpu, Code2 } from 'lucide-react';
+import { Leaf, Microscope, Waves } from 'lucide-react';
 
 interface ArchitectureStageProps {
   isFlooded: boolean;
@@ -11,28 +11,28 @@ export const ArchitectureStage: React.FC<ArchitectureStageProps> = ({ isFlooded 
 
   const pillars = [
     {
-      id: 'web',
-      icon: <Code2 className="w-5 h-5 text-[#0284c7]" />,
-      title: 'Fullstack Web Development',
-      subtitle: 'Laravel Monolith & Modern React Ecosystem',
-      desc: 'Membangun aplikasi web end-to-end dengan backend Laravel / Node.js dan frontend modern React, Next.js, serta TypeScript. Terbiasa mengelola pemodelan database relasional, optimasi query SQL, integrasi REST API, dan antarmuka reaktif yang responsif.',
-      tags: ['Laravel', 'Inertia.js', 'React', 'Next.js', 'TypeScript', 'PostgreSQL', 'MySQL', 'Tailwind CSS']
+      id: 'ecology',
+      icon: <Leaf className="w-5 h-5 text-[#16a34a]" />,
+      title: 'Ekologi & Biodiversitas',
+      subtitle: 'Minat pada hubungan organisme dan ekosistem',
+      desc: 'Saya tertarik mengeksplorasi bagaimana organisme berinteraksi dengan lingkungannya serta bagaimana keanekaragaman hayati membentuk ekosistem.',
+      tags: ['Ekologi', 'Biodiversitas', 'Konservasi']
     },
     {
-      id: 'mobile',
-      icon: <Cpu className="w-5 h-5 text-[#0284c7]" />,
-      title: 'Mobile App Engineering',
-      subtitle: 'Cross-Platform Android & iOS Applications',
-      desc: 'Mengembangkan aplikasi mobile lintas platform menggunakan Flutter dan Dart. Menangani arsitektur state management reaktif, konsumsi RESTful API, persistensi data lokal/cloud, serta performa aplikasi yang stabil di Android dan iOS.',
-      tags: ['Flutter', 'Dart SDK', 'Mobile Architecture', 'State Management', 'REST APIs', 'Cloud Firestore']
+      id: 'microbiology',
+      icon: <Microscope className="w-5 h-5 text-[#0284c7]" />,
+      title: 'Mikrobiologi',
+      subtitle: 'Mengenal kehidupan pada skala mikroskopis',
+      desc: 'Mikroorganisme dan perannya dalam proses alam menjadi salah satu topik yang ingin saya pelajari lebih jauh.',
+      tags: ['Mikroorganisme', 'Mikrobiologi', 'Proses Alam']
     },
     {
-      id: 'linux',
-      icon: <Terminal className="w-5 h-5 text-[#8c6239]" />,
-      title: 'Linux & DevOps Workflows',
-      subtitle: 'NixOS Daily Driver & Server Management',
-      desc: 'Menggunakan NixOS sebagai sistem operasi harian dengan konfigurasi deklaratif Flakes. Terbiasa dengan manajemen server Linux (Debian/Arch), containerisasi Docker, otomatisasi skrip Bash, dan workflow kolaborasi Git.',
-      tags: ['NixOS Flakes', 'Arch Linux', 'Debian Server', 'Docker', 'Git Branching', 'Bash CLI']
+      id: 'environment',
+      icon: <Waves className="w-5 h-5 text-[#0284c7]" />,
+      title: 'Ilmu Lingkungan',
+      subtitle: 'Memahami keterkaitan alam dan kehidupan',
+      desc: 'Saya memiliki minat pada isu lingkungan dan hubungan antara proses ekologis, aktivitas manusia, serta keberlanjutan.',
+      tags: ['Lingkungan', 'Ekosistem', 'Keberlanjutan']
     }
   ];
 
@@ -126,7 +126,7 @@ export const ArchitectureStage: React.FC<ArchitectureStageProps> = ({ isFlooded 
 
           <div className="pt-4 border-t border-[#e8dbc0]">
             <span className="text-xs font-mono font-bold text-[#8c6239] block mb-2.5">
-              TECH STACK:
+              TOPIK MINAT:
             </span>
             <div className="flex flex-wrap gap-2">
               {pillars[activePillar].tags.map((t) => (
@@ -154,10 +154,10 @@ export const ArchitectureStage: React.FC<ArchitectureStageProps> = ({ isFlooded 
           className="p-4 rounded-2xl bg-[#fffdf5] border border-[#e8dbc0] shadow-sm"
         >
           <span className="text-xs font-bold text-[#0f172a] block">
-            Clean Architecture
+            Keanekaragaman Hayati
           </span>
           <p className="text-[11px] text-[#64748b] mt-1 leading-relaxed">
-            Struktur kode terorganisir dengan pemisahan dependensi dan modularitas tinggi.
+            Ketertarikan pada ragam organisme dan ekosistem tempatnya hidup.
           </p>
         </motion.div>
 
@@ -171,10 +171,10 @@ export const ArchitectureStage: React.FC<ArchitectureStageProps> = ({ isFlooded 
           className="p-4 rounded-2xl bg-[#fffdf5] border border-[#e8dbc0] shadow-sm"
         >
           <span className="text-xs font-bold text-[#0f172a] block">
-            Type-Safe Contract
+            Ekologi
           </span>
           <p className="text-[11px] text-[#64748b] mt-1 leading-relaxed">
-            Keamanan tipe penuh dari skema database hingga interaksi klien.
+            Minat pada hubungan organisme dengan lingkungan dan satu sama lain.
           </p>
         </motion.div>
 
@@ -188,10 +188,10 @@ export const ArchitectureStage: React.FC<ArchitectureStageProps> = ({ isFlooded 
           className="p-4 rounded-2xl bg-[#fffdf5] border border-[#e8dbc0] shadow-sm"
         >
           <span className="text-xs font-bold text-[#0f172a] block">
-            Linux Workflows
+            Biologi Pangan
           </span>
           <p className="text-[11px] text-[#64748b] mt-1 leading-relaxed">
-            Konfigurasi deklaratif NixOS, containerisasi Docker, dan efisiensi terminal.
+            Rasa ingin tahu pada hubungan biologi, bahan pangan, dan nutrisi.
           </p>
         </motion.div>
       </div>

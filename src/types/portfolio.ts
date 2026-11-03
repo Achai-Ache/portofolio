@@ -1,10 +1,10 @@
-export type ProjectCategory = 'all' | 'fullstack' | 'mobile';
+export type ProjectCategory = 'all' | 'food' | 'community';
 
 export interface Project {
   id: string;
   title: string;
   subtitle: string;
-  category: 'fullstack' | 'mobile';
+  category: 'food' | 'community';
   summary: string;
   description: string;
   architecture: string[];

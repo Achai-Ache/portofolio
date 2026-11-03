@@ -37,20 +37,19 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({ onOpenProject 
 
   // gradual overlapping curtain wipe ranges
   const ySlide2 = useTransform(smoothProgress, [0.22, 0.36], ['100%', '0%'], { clamp: true });
-  const ySlide3 = useTransform(smoothProgress, [0.47, 0.61], ['100%', '0%'], { clamp: true });
-  const ySlide4 = useTransform(smoothProgress, [0.72, 0.86], ['100%', '0%'], { clamp: true });
+  const yIndex = useTransform(smoothProgress, [0.62, 0.78], ['100%', '0%'], { clamp: true });
 
   return (
     <section
       id="projects"
       ref={containerRef}
-      className="relative h-[560vh] bg-[#fff9d4] select-none"
+      className="relative h-[420vh] bg-[#fff9d4] select-none"
     >
       {/* pinned viewport stage */}
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         {/* progress indicators */}
         <div className="absolute top-[76px] sm:top-24 right-4 sm:right-12 z-50 flex items-center gap-1.5 sm:gap-2 p-1.5 sm:p-2 rounded-xl sm:rounded-2xl bg-[#fffdf5] border-2 border-[#0f172a] shadow-[2.5px_2.5px_0px_#0f172a] sm:shadow-[4px_4px_0px_#0f172a]">
-          {[0, 1, 2, 3].map((idx) => (
+          {[0, 1, 2].map((idx) => (
             <div
               key={idx}
               className="h-2 sm:h-2.5 rounded-full bg-[#faeed1] border border-[#0f172a] overflow-hidden w-5 sm:w-10"
@@ -60,7 +59,7 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({ onOpenProject 
                 style={{
                   scaleX: useTransform(
                     smoothProgress,
-                    [idx * 0.25, (idx + 1) * 0.25],
+                    [idx / 3, (idx + 1) / 3],
                     [0, 1],
                     { clamp: true }
                   )
@@ -92,19 +91,9 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({ onOpenProject 
           />
         )}
 
-        {flagshipProjects[2] && (
-          <FlagshipSlideCard
-            project={flagshipProjects[2]}
-            index={2}
-            yMotion={ySlide3}
-            depthLevel={3}
-            onSelectProject={handleSelect}
-          />
-        )}
-
         {/* project index overview */}
         <motion.div
-          style={{ y: ySlide4, zIndex: 40 }}
+          style={{ y: yIndex, zIndex: 40 }}
           className="absolute inset-0 w-full h-full bg-[#02587a] shadow-[0_-8px_24px_rgba(15,23,42,0.35)]"
         >
           <FilteredProjectDock

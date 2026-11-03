@@ -303,7 +303,7 @@ export const PipelineInspector: React.FC<PipelineInspectorProps> = ({
               >
                 <div>
                   <div className="flex items-center justify-between text-[10px] font-mono font-bold text-[#64748b] uppercase pb-1">
-                    <span>{proj.category === 'fullstack' ? 'Web System' : 'Mobile App'}</span>
+                    <span>{proj.category === 'food' ? 'Pangan & nutrisi' : 'Pangan & komunitas'}</span>
                     <ArrowUpRight className="w-3.5 h-3.5 text-[#0f172a] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </div>
 

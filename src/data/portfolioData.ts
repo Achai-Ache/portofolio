@@ -4,16 +4,17 @@ export const profileData: ProfileData = {
   name: 'Achai Ridho Dhavita',
   tagline: 'Biology Student & Environmental Science Enthusiast',
   education: 'Biologi (S1) • Universitas Airlangga',
-  status: 'Available for Engineering Roles & Projects',
-  bio: 'Informatics engineering undergraduate focused on building end-to-end web platforms and mobile applications with resilient architecture, clean code, and Linux-driven workflows.',
-  experienceStart: 'Active Developer',
+  status: 'Terbuka untuk kolaborasi biologi dan lingkungan',
+  bio: 'Mahasiswa Biologi Universitas Airlangga yang tertarik pada biodiversitas, ekologi, mikrobiologi, dan hubungan ekosistem dengan kehidupan sehari-hari.',
+  experienceStart: 'Mahasiswa Biologi',
   avatarUrl: '/avatar.svg',
   interests: [
-    'Web Architecture',
-    'Mobile Systems',
-    'Linux Ecosystem',
-    'Software Reliability',
-    'Reactive Interfaces'
+    'Ekologi dan biodiversitas',
+    'Mikrobiologi',
+    'Ilmu lingkungan',
+    'Konservasi',
+    'Keanekaragaman hayati',
+    'Biologi pangan'
   ],
   contact: {
     email: 'achaidhavita71@gmail.com',
@@ -24,7 +25,6 @@ export const profileData: ProfileData = {
 };
 
 export const techStackData: TechItem[] = [
-  // client interface layer
   {
     name: 'TypeScript',
     category: 'frontend',
@@ -208,38 +208,22 @@ export const projectsData: Project[] = [
     id: 'cimart',
     title: 'CiMart (CibendaMart)',
     subtitle: 'Rural E-Commerce Platform for Desa Cibenda, Pangandaran',
-    category: 'fullstack',
-    summary: 'Platform e-commerce desa yang dibangun atas permintaan Wakil Rektor & Prodi untuk memberdayakan transaksi komoditas sembako, hasil tani, ternak, ikan, dan UMKM warga Desa Cibenda.',
-    description: 'Proyek inisiatif digitalisasi desa yang dimandatkan langsung oleh pimpinan kampus bekerjasama dengan perangkat Desa Cibenda. Platform ini menjembatani produsen desa langsung dengan pembeli regional melalui integrasi peta dan pembayaran terotomatisasi.',
+    category: 'community',
+    summary: 'Inisiatif kolaborasi kampus dan Desa Cibenda untuk mendukung pengenalan komoditas lokal, termasuk hasil pertanian, peternakan, perikanan, dan produk UMKM.',
+    description: 'Karya lintas bidang yang mengangkat potensi komoditas dan kegiatan ekonomi Desa Cibenda, Pangandaran. Konteksnya bersinggungan dengan sistem pangan lokal dan hubungan masyarakat dengan sumber daya alam.',
     architecture: [
-      'Backend monolitik Laravel dengan routing frontend React TypeScript via Inertia.js',
-      'WebSockets untuk sinkronisasi pesanan dan status transaksi real-time',
-      'Firebase Cloud Messaging (FCM) untuk push notification otomatis',
-      'Integrasi Leaflet / OpenStreetMap untuk pemetaan titik pengantaran desa',
-      'Payment gateway Midtrans otomatis dengan otentikasi Google OAuth',
-      'Containerisasi Docker untuk memastikan reliabilitas deployment antar server'
+      'Mengangkat hasil pertanian, peternakan, dan perikanan sebagai bagian dari potensi desa',
+      'Memperkenalkan produk dan komoditas UMKM lokal kepada masyarakat yang lebih luas',
+      'Menjadi konteks untuk memahami keterkaitan sumber daya alam dan kehidupan masyarakat'
     ],
-    stack: [
-      'Laravel',
-      'Inertia.js',
-      'React',
-      'TypeScript',
-      'MySQL',
-      'Tailwind CSS',
-      'Docker',
-      'FCM',
-      'WebSockets',
-      'Leaflet / OSM',
-      'Midtrans',
-      'Google OAuth'
-    ],
+    stack: ['Pertanian', 'Peternakan', 'Perikanan', 'Komoditas lokal', 'UMKM'],
     highlights: [
       'Inisiatif resmi atas penugasan Warek & Prodi Biologi',
       'Mendukung komoditas sembako, pertanian, peternakan, perikanan, dan kerajinan',
       'Sistem pembayaran digital instan dan pemetaan akurat level desa'
     ],
-    challenges: 'Dikerjakan dan diarsiteki secara mandiri dari nol hingga tahap produksi karena keterbatasan anggota tim.',
-    role: 'Full-Stack Engineer',
+    challenges: 'Menghubungkan beragam jenis komoditas lokal dan kebutuhan masyarakat dalam satu inisiatif kolaboratif.',
+    role: 'Inisiatif kolaborasi kampus dan desa',
     demoUrl: 'https://cimart.desa.id',
     isPrivateRepo: true,
     privateRepoReason: 'Repository privat karena hak cipta institusi & kerahasiaan data',
@@ -247,91 +231,40 @@ export const projectsData: Project[] = [
     imageFit: 'cover',
     featured: true,
     metrics: [
-      { label: 'Engineering', value: 'Full-Stack Developer' },
-      { label: 'Architecture', value: 'Laravel Inertia' },
-      { label: 'Payment API', value: 'Midtrans Iris' }
-    ]
-  },
-  {
-    id: 'villanakey',
-    title: 'villaNaKey',
-    subtitle: 'Aplikasi Mobile Booking & Manajemen Reservasi Villa Keluarga',
-    category: 'mobile',
-    summary: 'Aplikasi mobile booking khusus untuk mendukung operasional bisnis hospitality villa pribadi keluarga dengan sinkronisasi kalender real-time tanpa risiko double-booking.',
-    description: 'Dikembangkan sebagai proyek akhir kampus untuk mendigitalisasi pemesanan villa keluarga, mengeliminasi risiko double-booking, dan mempermudah pengecekan jadwal reservasi bagi pengelola dan tamu.',
-    architecture: [
-      'Aplikasi mobile multi-platform dibangun dengan Flutter dan Dart SDK',
-      'Firebase Authentication untuk otentikasi aman pengelola dan tamu',
-      'Cloud Firestore NoSQL real-time database untuk sinkronisasi instan jadwal reservasi',
-      'Komponen custom calendar interaktif dengan highlight tanggal booking aktif'
-    ],
-    stack: [
-      'Flutter',
-      'Dart',
-      'Firebase Auth',
-      'Cloud Firestore',
-      'Mobile Architecture'
-    ],
-    highlights: [
-      'Digunakan langsung pada operasional villa pribadi keluarga',
-      'Sinkronisasi status booking instan tanpa latency',
-      'Kalender interaktif visual untuk kemudahan reservasi tanggal'
-    ],
-    challenges: 'Proyek aplikasi mobile pertama; mempelajari Flutter dan reaktif state management dari nol bersama kelompok di bawah tenggat waktu akademik yang ketat.',
-    role: 'Mobile Developer & Technical Lead',
-    githubUrl: 'https://github.com/ryhndastra/villanakey',
-    isMobileApp: true,
-    demoStatusLabel: 'Aplikasi Mobile Native (Demo/APK on request)',
-    imageUrl: '/projects/villa.png',
-    imageFit: 'contain',
-    featured: true,
-    metrics: [
-      { label: 'Mobile Engine', value: 'Flutter & Dart' },
-      { label: 'Database Sync', value: 'Real-Time NoSQL' },
-      { label: 'State & Cloud', value: 'Firebase Suite' }
+      { label: 'Konteks', value: 'Pangan lokal' },
+      { label: 'Komoditas', value: 'Pertanian & perikanan' },
+      { label: 'Kolaborasi', value: 'Kampus & desa' }
     ]
   },
   {
     id: 'kalorin-ai',
     title: 'kalorinAi',
     subtitle: 'Platform Web Nutrisi & Tracking Kalori Berbasis Computer Vision AI',
-    category: 'fullstack',
-    summary: 'Platform pelacak nutrisi cerdas dengan pengenalan citra piring makanan berbasis AI untuk menghitung kalori, makronutrien, serta rekomendasi harian.',
-    description: 'Capstone Project Dicoding CodingCamp 2026 Powered by DBS Foundation yang dikembangkan bersama tim 6 orang (2 Data Analyst, 2 AI Engineer, 2 Fullstack). Fitur mencakup kalkulator BMI, tracking asupan harian, streak, insight AI, dan rekomendasi menu.',
+    category: 'food',
+    summary: 'Proyek lintas bidang tentang nutrisi dan pangan yang mengeksplorasi pencatatan asupan, komposisi makanan, dan rekomendasi menu harian.',
+    description: 'Proyek capstone yang dikembangkan bersama tim enam orang. Fokus temanya adalah hubungan makanan, asupan gizi, dan kebiasaan konsumsi sehari-hari; ini merupakan proyek digital bertema nutrisi, bukan penelitian biologi.',
     architecture: [
-      'Client web modern menggunakan React, Vite, dan Tailwind CSS v4',
-      'Database dan layer data menggunakan Supabase dan Prisma ORM',
-      'Sistem otentikasi aman menggunakan Firebase Auth',
-      'Pipeline computer vision TensorFlow/Keras di backend Python untuk mendeteksi porsi dan nilai gizi (kalori, protein, lemak, karbohidrat)',
-      'Mesin rekomendasi harian adaptif berdasarkan target kalori pengguna'
+      'Mengangkat tema gizi dan komposisi makanan dalam konteks kebiasaan konsumsi',
+      'Mendorong perhatian pada asupan energi dan makronutrien',
+      'Menyajikan gagasan rekomendasi menu sebagai bagian dari literasi pangan'
     ],
-    stack: [
-      'React',
-      'Vite',
-      'Tailwind CSS v4',
-      'TypeScript',
-      'Supabase',
-      'Prisma ORM',
-      'Firebase Auth',
-      'TensorFlow',
-      'Python'
-    ],
+    stack: ['Nutrisi', 'Pangan', 'Makronutrien', 'Literasi gizi'],
     highlights: [
       'Capstone Project Dicoding CodingCamp 2026 Powered by DBS Foundation',
       'Deteksi citra makanan otomatis untuk kalkulasi makronutrien instan',
       'Sistem insight harian dan rekomendasi personal berbasis AI'
     ],
-    challenges: 'Menggarap seluruh arsitektur web dan integrasi API secara mandiri di tengah jadwal padat antara perkuliahan semester aktif dan bootcamp.',
-    role: 'Lead Web Full-Stack Developer',
+    challenges: 'Menyusun tema pangan dan nutrisi menjadi pengalaman yang mudah dipahami bersama tim lintas disiplin.',
+    role: 'Proyek capstone lintas bidang',
     githubUrl: 'https://github.com/ryhndastra/kalorin-ai',
     demoUrl: 'https://kalorin-ai.vercel.app',
     imageUrl: '/projects/kalorinLogo.png',
     imageFit: 'contain',
     featured: true,
     metrics: [
-      { label: 'Capstone Team', value: '6 Engineers' },
-      { label: 'AI Inference', value: 'TensorFlow CNN' },
-      { label: 'Web Platform', value: 'React & Vite' }
+      { label: 'Tim', value: '6 anggota' },
+      { label: 'Tema', value: 'Nutrisi & pangan' },
+      { label: 'Fokus', value: 'Literasi gizi' }
     ]
   }
 ];
@@ -345,61 +278,12 @@ export const experienceData: ExperienceItem[] = [
     badge: 'Pendidikan Formal',
     category: 'education',
     description:
-      'Menempuh studi sarjana Biologi dengan pendalaman fundamental ilmu hayati, ekologi, mikrobiologi, dan penelitian ilmiah berbasis data dan observasi lapangan.',
+      'Menempuh pendidikan Sarjana Biologi di Universitas Airlangga. Ketertarikan akademik mencakup ekologi, mikrobiologi, keanekaragaman hayati, dan ilmu lingkungan.',
     highlights: [
-      'Penjurusan Biologi Umum & Penelitian',
-      'Pemodelan Data Lapangan & Analisis Observasi',
-      'Fundamental Ilmu Hayati & Metodologi Penelitian'
+      'Mahasiswa Biologi angkatan 2023',
+      'Minat pada ekologi dan keanekaragaman hayati',
+      'Tertarik pada mikrobiologi dan ilmu lingkungan'
     ],
-    tech: ['Biologi', 'Ekologi', 'Mikrobiologi', 'Penelitian', 'Analisis Data', 'Observasi Lapangan']
-  },
-  {
-    id: 'exp-dicoding-dbs',
-    period: 'Feb 2026 - Jul 2026',
-    role: 'Fullstack Developer (Learning Path)',
-    organization: 'Dicoding CodingCamp 2026 Powered by DBS Foundation',
-    badge: 'Intensive Bootcamp',
-    category: 'bootcamp',
-    description:
-      'Program beasiswa pelatihan intensif Fullstack Developer dari Dicoding dan DBS Foundation. Membangun arsitektur frontend web modern (React & Vite), integrasi API backend type-safe, otentikasi data, dan berkolaborasi dalam Capstone Project kalorinAI.',
-    highlights: [
-      'Lulusan Jalur Fullstack Developer',
-      'Integrasi REST API, State Management & Cloud DB',
-      'Kolaborasi Tim Capstone Project kalorinAI'
-    ],
-    tech: ['React', 'TypeScript', 'Node.js', 'Supabase', 'Prisma ORM', 'Tailwind CSS', 'REST API']
-  },
-  {
-    id: 'exp-cimart-mbkm',
-    period: 'Jul 2026 - Sekarang',
-    role: 'Full-Stack Developer',
-    organization: 'Inisiatif MBKM / KKN Tematik & Capstone Kampus Desa Cibenda',
-    badge: 'MBKM / Capstone Kampus',
-    category: 'project',
-    description:
-      'Inisiatif MBKM / KKN Tematik resmi dari kampus yang menjadi Capstone Project untuk digitalisasi komoditas ekonomi warga Desa Cibenda, Pangandaran. Dikerjakan secara mandiri dari perancangan arsitektur sistem, integrasi payment gateway Midtrans, notifikasi FCM, hingga deployment produksi.',
-    highlights: [
-      'Mandat Resmi Pimpinan Kampus & Perangkat Desa',
-      'Development Arsitektur End-to-End',
-      'Integrasi Payment Gateway Midtrans & WebSockets'
-    ],
-    tech: ['Laravel', 'Inertia.js', 'React', 'MySQL', 'Docker', 'WebSockets', 'Midtrans', 'Leaflet']
-  },
-  {
-    id: 'exp-rework-cybersecurity',
-    period: 'Agu 2026 - Des 2026',
-    role: 'Cyber Security Trainee (Red Team Focus)',
-    organization: 'Cyber Security Bootcamp by Rework Academy',
-    badge: 'Cyber Security Bootcamp',
-    category: 'security',
-    description:
-      'Pelatihan intensif keamanan siber komprehensif mulai dari fundamental cybersecurity, vulnerability assessment, web application penetration testing (OWASP Top 10), network penetration testing, bug bounty hunting, hingga penyusunan security reporting profesional. Fokus mendalam pada Red Team (Offensive Security) dengan pemahaman komplementer Blue Team (Defensive) dan Purple Team.',
-    highlights: [
-      'Web Application & Network Penetration Testing',
-      'Metodologi Bug Bounty & Eksploitasi OWASP Top 10',
-      'Vulnerability Assessment & Security Reporting',
-      'Fokus Offensive Red Team dengan Pemahaman Blue/Purple Team'
-    ],
-    tech: ['Web App Pentesting', 'Network Security', 'OWASP Top 10', 'Bug Bounty', 'Red Teaming', 'Linux Security', 'Security Reporting']
+    tech: ['Biologi', 'Ekologi', 'Mikrobiologi', 'Ilmu Lingkungan', 'Biodiversitas']
   }
 ];

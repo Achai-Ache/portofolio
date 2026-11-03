@@ -14,7 +14,7 @@ export const ProjectPreviewPlaceholder: React.FC<ProjectPreviewPlaceholderProps>
   isMobileFrame = false
 }) => {
   const [imageError, setImageError] = useState(false);
-  const isMobile = isMobileFrame || project.category === 'mobile';
+  const isMobile = isMobileFrame;
 
   return (
     <div

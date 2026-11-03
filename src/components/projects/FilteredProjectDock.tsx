@@ -29,14 +29,14 @@ export const FilteredProjectDock: React.FC<FilteredProjectDockProps> = ({
   const categories: { id: ProjectCategory; label: string; count: number }[] = [
     { id: 'all', label: 'Semua Proyek', count: projects.length },
     {
-      id: 'fullstack',
-      label: 'Full-Stack Web',
-      count: projects.filter((p) => p.category === 'fullstack').length
+      id: 'food',
+      label: 'Pangan & Nutrisi',
+      count: projects.filter((p) => p.category === 'food').length
     },
     {
-      id: 'mobile',
-      label: 'Mobile Flutter',
-      count: projects.filter((p) => p.category === 'mobile').length
+      id: 'community',
+      label: 'Pangan & Komunitas',
+      count: projects.filter((p) => p.category === 'community').length
     }
   ];
 
@@ -70,7 +70,7 @@ export const FilteredProjectDock: React.FC<FilteredProjectDockProps> = ({
           <div className="grid grid-cols-3 sm:flex sm:items-center gap-1.5 sm:gap-2 w-full sm:w-auto">
             {categories.map((cat) => {
               const shortLabel =
-                cat.id === 'all' ? 'Semua' : cat.id === 'fullstack' ? 'Web' : 'Mobile';
+                cat.id === 'all' ? 'Semua' : cat.id === 'food' ? 'Pangan' : 'Komunitas';
 
               return (
                 <button
@@ -158,7 +158,7 @@ export const FilteredProjectDock: React.FC<FilteredProjectDockProps> = ({
                       0{idx + 1}
                     </span>
                     <span className="text-[11px] font-mono font-bold text-[#0284c7]">
-                      {project.category === 'fullstack' ? 'Full-Stack Web' : 'Mobile Flutter'}
+                      {project.category === 'food' ? 'Pangan & Nutrisi' : 'Pangan & Komunitas'}
                     </span>
                   </div>
 
@@ -215,7 +215,7 @@ export const FilteredProjectDock: React.FC<FilteredProjectDockProps> = ({
               <div className="space-y-2 sm:space-y-2">
                 <ProjectPreviewPlaceholder
                   project={activeProject}
-                  isMobileFrame={activeProject.category === 'mobile'}
+                  isMobileFrame={false}
                   className="h-[210px] min-[400px]:h-[235px] sm:h-auto sm:aspect-[16/9] sm:max-h-[220px] lg:max-h-none w-full"
                 />
 

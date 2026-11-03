@@ -2,9 +2,6 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import {
   GraduationCap,
-  Layers,
-  Rocket,
-  ShieldCheck,
   Calendar,
   CheckCircle2,
   Compass
@@ -32,30 +29,6 @@ const categoryConfig: Record<
     tagText: 'text-[#0f172a]',
     tagBorder: 'border-[#0f172a]'
   },
-  bootcamp: {
-    icon: Layers,
-    nodeBg: 'bg-[#38bdf8]',
-    nodeText: 'text-[#0f172a]',
-    tagBg: 'bg-[#e0f2fe]',
-    tagText: 'text-[#0284c7]',
-    tagBorder: 'border-[#0f172a]'
-  },
-  project: {
-    icon: Rocket,
-    nodeBg: 'bg-[#4ade80]',
-    nodeText: 'text-[#0f172a]',
-    tagBg: 'bg-[#dcfce7]',
-    tagText: 'text-[#15803d]',
-    tagBorder: 'border-[#0f172a]'
-  },
-  security: {
-    icon: ShieldCheck,
-    nodeBg: 'bg-[#fb7185]',
-    nodeText: 'text-[#0f172a]',
-    tagBg: 'bg-[#fee2e2]',
-    tagText: 'text-[#dc2626]',
-    tagBorder: 'border-[#0f172a]'
-  }
 };
 
 export const JourneyTimeline: React.FC = () => {
@@ -105,15 +78,15 @@ export const JourneyTimeline: React.FC = () => {
         >
           <div className="flex items-center gap-2 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-xl bg-[#fde047] text-[#0f172a] text-xs font-mono font-black border-2 border-[#0f172a] shadow-[2px_2px_0px_#0f172a] sm:shadow-[3px_3px_0px_#0f172a] w-fit">
             <Compass className="w-3.5 h-3.5" />
-            <span>MILESTONE</span>
+            <span>CATATAN STUDI</span>
           </div>
 
           <div className="space-y-1 sm:space-y-1.5">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-[#0f172a] tracking-tight leading-[1.08]">
-              Milestone
+              Perjalanan Akademik
             </h2>
             <p className="text-xs sm:text-base font-medium text-[#475569] max-w-2xl leading-relaxed">
-              Pendidikan sarjana biologi, program bootcamp intensif, inisiatif mandiri, dan eksplorasi keamanan siber.
+              Perjalanan saya sebagai mahasiswa Biologi Universitas Airlangga.
             </p>
           </div>
         </motion.div>
@@ -196,7 +169,7 @@ export const JourneyTimeline: React.FC = () => {
                   {item.highlights && item.highlights.length > 0 && (
                     <div className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-[#fff9d4]/80 border border-[#0f172a]/20 sm:border-2 sm:border-[#0f172a]/15 space-y-1.5 sm:space-y-2">
                       <div className="text-[10px] sm:text-[11px] font-mono font-black uppercase tracking-wider text-[#475569]">
-                        Poin Kunci &amp; Spesialisasi
+                        Bidang Studi &amp; Minat
                       </div>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 sm:gap-2">
                         {item.highlights.map((hl, hIdx) => (
@@ -212,7 +185,7 @@ export const JourneyTimeline: React.FC = () => {
                     </div>
                   )}
 
-                  {/* skills and tech tags */}
+                  {/* biology study and interest tags */}
                   <div className="pt-1 sm:pt-2 flex flex-wrap gap-1.5 sm:gap-2">
                     {item.tech.map((t) => (
                       <span

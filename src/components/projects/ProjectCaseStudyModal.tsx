@@ -75,7 +75,7 @@ export const ProjectCaseStudyModal: React.FC<ProjectCaseStudyModalProps> = ({
             <div>
               <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-1.5 sm:mb-2">
                 <span className="text-[10px] sm:text-xs font-mono font-black uppercase tracking-wider text-[#0f172a] bg-[#fde047] px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md sm:rounded-lg border-2 border-[#0f172a]">
-                  {project.category === 'fullstack' ? 'FULL-STACK WEB ARCHITECTURE' : 'MOBILE FLUTTER SYSTEM'}
+                  {project.category === 'food' ? 'PANGAN & NUTRISI' : 'PANGAN & KOMUNITAS'}
                 </span>
                 <span className="text-[10px] sm:text-xs font-mono font-bold text-[#64748b]">
                   // {project.role}
@@ -103,7 +103,7 @@ export const ProjectCaseStudyModal: React.FC<ProjectCaseStudyModalProps> = ({
           {/* preview frame */}
           <ProjectPreviewPlaceholder
             project={project}
-            isMobileFrame={project.category === 'mobile'}
+            isMobileFrame={false}
             className="aspect-[16/10] w-full max-h-[340px]"
           />
 
@@ -133,7 +133,7 @@ export const ProjectCaseStudyModal: React.FC<ProjectCaseStudyModalProps> = ({
           <div className="space-y-2">
             <h4 className="text-[11px] sm:text-xs font-mono uppercase font-black text-[#0f172a] flex items-center gap-2">
               <Layers className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#0284c7]" />
-              <span>Latar Belakang &amp; Mandat Proyek</span>
+              <span>Latar Belakang &amp; Konteks</span>
             </h4>
             <p className="text-xs sm:text-base text-[#334155] leading-relaxed bg-[#fff9d4] p-3.5 sm:p-5 rounded-xl sm:rounded-2xl border-2 border-[#0f172a]/30 font-medium">
               {project.description}
@@ -144,7 +144,7 @@ export const ProjectCaseStudyModal: React.FC<ProjectCaseStudyModalProps> = ({
           <div className="space-y-3">
             <h4 className="text-xs font-mono uppercase font-black text-[#0f172a] flex items-center gap-2">
               <Code2 className="w-4 h-4 text-[#0284c7]" />
-              <span>Arsitektur Sistem &amp; Eksekusi Teknis</span>
+              <span>Ruang Lingkup Proyek</span>
             </h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               {project.architecture.map((item, idx) => (
@@ -174,7 +174,7 @@ export const ProjectCaseStudyModal: React.FC<ProjectCaseStudyModalProps> = ({
           {/* technology stack */}
           <div className="space-y-2.5">
             <h4 className="text-xs font-mono uppercase font-black text-[#0f172a]">
-              Daftar Stack Teknologi &amp; Protokol
+              Topik Utama
             </h4>
             <div className="flex flex-wrap gap-2">
               {project.stack.map((tech) => (
