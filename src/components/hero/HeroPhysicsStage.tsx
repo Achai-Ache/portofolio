@@ -20,18 +20,16 @@ interface LetterData {
 }
 
 const INITIAL_LETTERS: Omit<LetterData, 'posX' | 'posY' | 'wobble'>[] = [
-  { id: 'r1', char: 'R', wordIdx: 0, letterIdx: 0 },
-  { id: 'e1', char: 'E', wordIdx: 0, letterIdx: 1 },
-  { id: 'y1', char: 'Y', wordIdx: 0, letterIdx: 2 },
-  { id: 'h1', char: 'H', wordIdx: 0, letterIdx: 3 },
-  { id: 'a1', char: 'A', wordIdx: 0, letterIdx: 4 },
-  { id: 'n1', char: 'N', wordIdx: 0, letterIdx: 5 },
-  { id: 'd1', char: 'D', wordIdx: 0, letterIdx: 6 },
-  { id: 'a2', char: 'A', wordIdx: 1, letterIdx: 0 },
-  { id: 's1', char: 'S', wordIdx: 1, letterIdx: 1 },
-  { id: 't1', char: 'T', wordIdx: 1, letterIdx: 2 },
-  { id: 'r2', char: 'R', wordIdx: 1, letterIdx: 3 },
-  { id: 'a3', char: 'A', wordIdx: 1, letterIdx: 4 },
+  { id: 'a1', char: 'A', wordIdx: 0, letterIdx: 0 },
+  { id: 'c1', char: 'C', wordIdx: 0, letterIdx: 1 },
+  { id: 'h1', char: 'H', wordIdx: 0, letterIdx: 2 },
+  { id: 'a2', char: 'A', wordIdx: 0, letterIdx: 3 },
+  { id: 'i1', char: 'I', wordIdx: 0, letterIdx: 4 },
+  { id: 'r1', char: 'R', wordIdx: 1, letterIdx: 0 },
+  { id: 'i2', char: 'I', wordIdx: 1, letterIdx: 1 },
+  { id: 'd1', char: 'D', wordIdx: 1, letterIdx: 2 },
+  { id: 'h2', char: 'H', wordIdx: 1, letterIdx: 3 },
+  { id: 'o1', char: 'O', wordIdx: 1, letterIdx: 4 },
 ];
 
 interface HeroPhysicsStageProps {

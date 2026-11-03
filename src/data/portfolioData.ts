@@ -1,9 +1,9 @@
 import type { ProfileData, Project, TechItem, ExperienceItem } from '../types/portfolio';
 
 export const profileData: ProfileData = {
-  name: 'Achai Astra',
-  tagline: 'Full-Stack & Mobile Developer',
-  education: 'Teknik Informatika (S1) • Universitas Widyatama',
+  name: 'Achai Ridho Dhavita',
+  tagline: 'Biology Student & Environmental Science Enthusiast',
+  education: 'Biologi (S1) • Universitas Airlangga',
   status: 'Available for Engineering Roles & Projects',
   bio: 'Informatics engineering undergraduate focused on building end-to-end web platforms and mobile applications with resilient architecture, clean code, and Linux-driven workflows.',
   experienceStart: 'Active Developer',
@@ -16,7 +16,7 @@ export const profileData: ProfileData = {
     'Reactive Interfaces'
   ],
   contact: {
-    email: 'ryhndastra@gmail.com',
+    email: 'achaidhavita71@gmail.com',
     github: 'https://github.com/ryhndastra',
     linkedin: 'https://linkedin.com/in/achai-astra',
     location: 'Indonesia'
@@ -234,7 +234,7 @@ export const projectsData: Project[] = [
       'Google OAuth'
     ],
     highlights: [
-      'Inisiatif resmi atas penugasan Warek & Prodi Teknik Informatika',
+      'Inisiatif resmi atas penugasan Warek & Prodi Biologi',
       'Mendukung komoditas sembako, pertanian, peternakan, perikanan, dan kerajinan',
       'Sistem pembayaran digital instan dan pemetaan akurat level desa'
     ],
@@ -338,20 +338,20 @@ export const projectsData: Project[] = [
 
 export const experienceData: ExperienceItem[] = [
   {
-    id: 'edu-widyatama',
+    id: 'edu-airlangga',
     period: '2023 - Sekarang',
-    role: 'S1 Teknik Informatika',
-    organization: 'Universitas Widyatama (Angkatan 2023)',
+    role: 'S1 Biologi',
+    organization: 'Universitas Airlangga (Angkatan 2023)',
     badge: 'Pendidikan Formal',
     category: 'education',
     description:
-      'Menempuh studi sarjana Teknik Informatika dengan pendalaman fundamental ilmu komputer, struktur data, algoritma, rekayasa perangkat lunak, dan mengambil penjurusan spesialisasi Database / Data Analyst.',
+      'Menempuh studi sarjana Biologi dengan pendalaman fundamental ilmu hayati, ekologi, mikrobiologi, dan penelitian ilmiah berbasis data dan observasi lapangan.',
     highlights: [
-      'Penjurusan Database & Data Analyst',
-      'Pemodelan Data Relasional & Optimasi Query SQL',
-      'Fundamental Rekayasa Perangkat Lunak & Algoritma'
+      'Penjurusan Biologi Umum & Penelitian',
+      'Pemodelan Data Lapangan & Analisis Observasi',
+      'Fundamental Ilmu Hayati & Metodologi Penelitian'
     ],
-    tech: ['Database Systems', 'Data Analysis', 'SQL', 'Algorithms', 'Software Engineering', 'System Design']
+    tech: ['Biologi', 'Ekologi', 'Mikrobiologi', 'Penelitian', 'Analisis Data', 'Observasi Lapangan']
   },
   {
     id: 'exp-dicoding-dbs',

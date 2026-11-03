@@ -159,7 +159,7 @@ export const EditorialProfile: React.FC = () => {
               Profil &amp; Keahlian
             </span>
             <h2 className="text-3xl sm:text-5xl font-black text-[#0f172a] tracking-tight leading-[1.08]">
-              Fullstack &amp; Mobile Developer
+              Biology Student &amp; Environmental Science Enthusiast
             </h2>
           </div>
 
@@ -172,7 +172,7 @@ export const EditorialProfile: React.FC = () => {
             />
 
             <p className="max-w-xs text-xs text-[#475569] leading-relaxed">
-              Berpengalaman mengembangkan aplikasi web skala penuh, aplikasi mobile, arsitektur database, serta manajemen infrastruktur Linux.
+              Mahasiswa Biologi Universitas Airlangga dengan minat pada mikrobiologi, bioteknologi, ekologi, dan analisis lingkungan. Memiliki pengalaman dalam kegiatan penelitian, pemetaan spasial, pengelolaan data, serta dokumentasi kegiatan ilmiah.
             </p>
           </div>
         </motion.div>
