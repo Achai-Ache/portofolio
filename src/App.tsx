@@ -9,6 +9,7 @@ import { ProjectShowcase } from './components/projects/ProjectShowcase';
 import { ResearchSection } from './components/projects/ResearchSection';
 import { BiologyFocusSection } from './components/biology/BiologyFocusSection';
 import { JourneyTimeline } from './components/journey/JourneyTimeline';
+import { PortfolioSections } from './components/portfolio/PortfolioSections';
 import { ContactSection } from './components/contact/ContactSection';
 import { ProjectCaseStudyModal } from './components/projects/ProjectCaseStudyModal';
 
@@ -33,6 +34,7 @@ export function App() {
         <ResearchSection onOpenProject={setActiveModalProject} />
         <BiologyFocusSection />
         <JourneyTimeline />
+        <PortfolioSections />
         <ContactSection />
       </main>
 
