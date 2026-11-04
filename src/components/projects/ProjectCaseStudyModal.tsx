@@ -75,7 +75,7 @@ export const ProjectCaseStudyModal: React.FC<ProjectCaseStudyModalProps> = ({
             <div>
               <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-1.5 sm:mb-2">
                 <span className="text-[10px] sm:text-xs font-mono font-black uppercase tracking-wider text-[#0f172a] bg-[#fde047] px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md sm:rounded-lg border-2 border-[#0f172a]">
-                  {project.category === 'food' ? 'PANGAN & NUTRISI' : 'PANGAN & KOMUNITAS'}
+                  {project.category === 'food' ? 'PANGAN & NUTRISI' : project.category === 'community' ? 'PANGAN & KOMUNITAS' : 'PENELITIAN BIOLOGI'}
                 </span>
                 <span className="text-[10px] sm:text-xs font-mono font-bold text-[#64748b]">
                   // {project.role}
@@ -144,7 +144,7 @@ export const ProjectCaseStudyModal: React.FC<ProjectCaseStudyModalProps> = ({
           <div className="space-y-3">
             <h4 className="text-xs font-mono uppercase font-black text-[#0f172a] flex items-center gap-2">
               <Code2 className="w-4 h-4 text-[#0284c7]" />
-              <span>Ruang Lingkup Proyek</span>
+              <span>{project.category === 'research' ? 'Metode & Kegiatan Penelitian' : 'Ruang Lingkup Proyek'}</span>
             </h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               {project.architecture.map((item, idx) => (
@@ -174,7 +174,7 @@ export const ProjectCaseStudyModal: React.FC<ProjectCaseStudyModalProps> = ({
           {/* technology stack */}
           <div className="space-y-2.5">
             <h4 className="text-xs font-mono uppercase font-black text-[#0f172a]">
-              Topik Utama
+              {project.category === 'research' ? 'Bidang & Metode' : 'Topik Utama'}
             </h4>
             <div className="flex flex-wrap gap-2">
               {project.stack.map((tech) => (

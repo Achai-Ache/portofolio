@@ -37,7 +37,7 @@ export const FilteredProjectDock: React.FC<FilteredProjectDockProps> = ({
       id: 'community',
       label: 'Pangan & Komunitas',
       count: projects.filter((p) => p.category === 'community').length
-    }
+    },
   ];
 
   const filteredProjects =
@@ -62,12 +62,12 @@ export const FilteredProjectDock: React.FC<FilteredProjectDockProps> = ({
               04 // INDEKS PORTOFOLIO
             </span>
             <h3 className="text-lg sm:text-2xl font-black text-white sm:text-[#0f172a] tracking-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)] sm:drop-shadow-none">
-              Eksplorasi Proyek &amp; Hasil Rekayasa
+              Karya &amp; Proyek
             </h3>
           </div>
 
           {/* category selection */}
-          <div className="grid grid-cols-3 sm:flex sm:items-center gap-1.5 sm:gap-2 w-full sm:w-auto">
+          <div className="grid grid-cols-2 sm:flex sm:items-center gap-1.5 sm:gap-2 w-full sm:w-auto">
             {categories.map((cat) => {
               const shortLabel =
                 cat.id === 'all' ? 'Semua' : cat.id === 'food' ? 'Pangan' : 'Komunitas';

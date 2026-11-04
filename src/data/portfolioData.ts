@@ -205,6 +205,93 @@ export const techStackData: TechItem[] = [
 
 export const projectsData: Project[] = [
   {
+    id: 'meru-betiri-pollinators',
+    title: 'Inventarisasi Keanekaragaman Serangga Polinator Subkelas Pterygota',
+    subtitle: 'Jalur Resort Sukamade - Perkebunan, TN Meru Betiri, Banyuwangi, Jawa Timur',
+    category: 'research',
+    summary: 'Riset lapangan untuk menginventarisasi keanekaragaman serangga polinator di sepanjang jalur dari kawasan hutan menuju perkebunan Sukamade.',
+    description: 'Penelitian dilakukan di Jalur Resort Sukamade - Perkebunan, kawasan Taman Nasional Meru Betiri, Banyuwangi, Jawa Timur, dengan fokus pada serangga polinator dari subkelas Pterygota.',
+    architecture: [
+      'Melakukan survei dan pengambilan sampel serangga polinator melalui inventarisasi lapangan',
+      'Menjelajahi jalur transmisi ekosistem hutan hingga perkebunan Sukamade',
+      'Mengidentifikasi morfologi spesies yang ditemukan dan mengkaji tingkat keanekaragamannya',
+      'Mempelajari peran serangga polinator dalam ekosistem perkebunan dan kawasan konservasi'
+    ],
+    stack: ['Entomologi', 'Pterygota', 'Inventarisasi', 'Identifikasi morfologi', 'Ekologi'],
+    highlights: [
+      'Survei lapangan di Taman Nasional Meru Betiri',
+      'Fokus pada keanekaragaman serangga polinator',
+      'Mencakup transisi habitat hutan dan perkebunan'
+    ],
+    challenges: 'Melakukan pencatatan dan identifikasi serangga pada jalur dengan konteks habitat yang beragam.',
+    role: 'Mahasiswa Peneliti',
+    imageUrl: '',
+    featured: true,
+    metrics: [
+      { label: 'Kelompok', value: 'Serangga polinator' },
+      { label: 'Takson', value: 'Subkelas Pterygota' },
+      { label: 'Lokasi', value: 'Resort Sukamade' }
+    ]
+  },
+  {
+    id: 'alas-purwo-lepidoptera',
+    title: 'Studi Keanekaragaman Lepidoptera: Heterocera & Rhopalocera',
+    subtitle: 'Taman Nasional Alas Purwo, Banyuwangi | Kelompok Kerja Neoptera',
+    category: 'research',
+    summary: 'Riset Lepidoptera yang mencakup pengamatan ngengat pada malam hari dan kupu-kupu pada siang hari di beberapa jalur habitat.',
+    description: 'Studi Heterocera dilakukan di area Penginapan Triangulasi, sedangkan studi Rhopalocera dilakukan di Jalur Pancur - Pelengkung dan Jalur Triangulasi - Sadengan, Taman Nasional Alas Purwo, Banyuwangi, Jawa Timur.',
+    architecture: [
+      'Mencacah dan mengoleksi sampel ngengat (Heterocera) pada malam hari menggunakan metode light trap',
+      'Mengamati kupu-kupu (Rhopalocera) pada siang hari dengan metode transek',
+      'Melakukan pengamatan di beberapa jalur dan area habitat di kawasan taman nasional',
+      'Mengolah kelimpahan dan kekayaan spesies untuk mengevaluasi kondisi ekosistem dan dinamika populasi Lepidoptera'
+    ],
+    stack: ['Lepidoptera', 'Heterocera', 'Rhopalocera', 'Light trap', 'Transek', 'Ekologi populasi'],
+    highlights: [
+      'Sampling nokturnal dan diurnal',
+      'Menggunakan metode light trap dan transek',
+      'Pengamatan di beberapa jalur TN Alas Purwo'
+    ],
+    challenges: 'Menyelaraskan waktu dan metode pengamatan untuk kelompok Lepidoptera yang aktif pada kondisi berbeda.',
+    role: 'Peneliti Lapangan | Kelompok Kerja Neoptera',
+    imageUrl: '',
+    featured: true,
+    metrics: [
+      { label: 'Kelompok', value: 'Lepidoptera' },
+      { label: 'Metode', value: 'Light trap & transek' },
+      { label: 'Lokasi', value: 'Taman Nasional Alas Purwo' }
+    ]
+  },
+  {
+    id: 'betta-burdigala-histology',
+    title: 'Karakteristik Histologis Gonad dan Indeks Gonadosomatik Betta burdigala',
+    subtitle: 'Tahap Awal Domestikasi | Zoologi, Universitas Airlangga',
+    category: 'research',
+    summary: 'Penelitian histologi zoologi mengenai jaringan gonad dan nilai gonadosomatic index (GSI) Betta burdigala pada tahap awal domestikasi.',
+    description: 'Penelitian di bidang zoologi Universitas Airlangga ini mempelajari karakteristik histologis gonad dan indeks gonadosomatik Betta burdigala pada tahap awal domestikasi.',
+    architecture: [
+      'Mempersiapkan jaringan gonad spesimen Betta burdigala untuk pengamatan histologis',
+      'Melakukan tahapan fiksasi, mikrotomi, dan pewarnaan histologis',
+      'Mengamati struktur mikroskopis organ reproduksi',
+      'Menganalisis nilai Gonadosomatic Index (GSI) untuk mengevaluasi kematangan gonad dan potensi reproduksi pada tahap awal domestikasi'
+    ],
+    stack: ['Zoologi', 'Histologi', 'Betta burdigala', 'Gonad', 'Gonadosomatic Index'],
+    highlights: [
+      'Preparasi jaringan gonad untuk pengamatan mikroskopis',
+      'Menggabungkan pengamatan histologi dan analisis GSI',
+      'Fokus pada tahap awal domestikasi'
+    ],
+    challenges: 'Menyiapkan jaringan melalui tahapan histologi dan mengaitkan hasil pengamatan dengan indeks biologis.',
+    role: 'Mahasiswa Peneliti | Zoologi',
+    imageUrl: '',
+    featured: true,
+    metrics: [
+      { label: 'Spesies', value: 'Betta burdigala' },
+      { label: 'Fokus', value: 'Histologi gonad' },
+      { label: 'Indeks', value: 'GSI' }
+    ]
+  },
+  {
     id: 'cimart',
     title: 'CiMart (CibendaMart)',
     subtitle: 'Rural E-Commerce Platform for Desa Cibenda, Pangandaran',
@@ -272,18 +359,63 @@ export const projectsData: Project[] = [
 export const experienceData: ExperienceItem[] = [
   {
     id: 'edu-airlangga',
-    period: '2023 - Sekarang',
+    period: '2024 - Sekarang',
     role: 'S1 Biologi',
-    organization: 'Universitas Airlangga (Angkatan 2023)',
+    organization: 'Universitas Airlangga (Angkatan 2024)',
     badge: 'Pendidikan Formal',
     category: 'education',
     description:
       'Menempuh pendidikan Sarjana Biologi di Universitas Airlangga. Ketertarikan akademik mencakup ekologi, mikrobiologi, keanekaragaman hayati, dan ilmu lingkungan.',
     highlights: [
-      'Mahasiswa Biologi angkatan 2023',
+      'Mahasiswa Biologi angkatan 2024',
       'Minat pada ekologi dan keanekaragaman hayati',
       'Tertarik pada mikrobiologi dan ilmu lingkungan'
     ],
     tech: ['Biologi', 'Ekologi', 'Mikrobiologi', 'Ilmu Lingkungan', 'Biodiversitas']
+  },
+  {
+    id: 'internship-dlh-jatim',
+    period: 'Periode tidak dicantumkan',
+    role: 'Intern - Pengendalian Pencemaran dan Kerusakan Lingkungan Hidup (PPKLH)',
+    organization: 'Dinas Lingkungan Hidup (DLH) Provinsi Jawa Timur',
+    badge: 'Pengalaman Magang',
+    category: 'internship',
+    description: 'Mendukung kegiatan pada bidang Pengendalian Pencemaran dan Kerusakan Lingkungan Hidup.',
+    highlights: [
+      'Berkontribusi dalam monitoring dan evaluasi kualitas lingkungan hidup',
+      'Menganalisis data parameter lingkungan untuk mendukung evaluasi daya dukung dan daya tampung lingkungan',
+      'Mendukung penerapan regulasi, SOP pemantauan, dan K3'
+    ],
+    tech: ['Monitoring lingkungan', 'Analisis data lingkungan', 'SOP', 'K3']
+  },
+  {
+    id: 'internship-psik-feb-ub',
+    period: '2023 - 2024',
+    role: 'Magang Staf Kehumasan',
+    organization: 'PSIK FEB, Universitas Brawijaya',
+    badge: 'Pengalaman Magang',
+    category: 'internship',
+    description: 'Mendukung dokumentasi, publikasi, produksi konten media sosial, dan pelaksanaan acara PSIK FEB Universitas Brawijaya.',
+    highlights: [
+      'Mendokumentasikan kegiatan kampus melalui foto dan video untuk publikasi dan arsip',
+      'Merancang, mengedit, dan mengunggah konten media sosial termasuk Instagram Reels dan video promosi',
+      'Membantu persiapan teknis dan pelaksanaan acara serta koordinasi lintas fungsi'
+    ],
+    tech: ['Dokumentasi foto dan video', 'Konten media sosial', 'Publikasi', 'Koordinasi acara']
+  },
+  {
+    id: 'teaching-assistant-anatomy',
+    period: 'Periode tidak dicantumkan',
+    role: 'Asisten Praktikum Anatomi Hewan',
+    organization: 'Departemen Biologi, Universitas Airlangga',
+    badge: 'Asisten Praktikum',
+    category: 'teaching',
+    description: 'Mendukung pelaksanaan praktikum Anatomi Hewan dengan memperhatikan keselamatan kerja, kesiapan alat dan bahan, serta evaluasi laporan ilmiah.',
+    highlights: [
+      'Menerapkan dan mengawasi standar K3 serta keselamatan laboratorium bagi praktikan',
+      'Menyiapkan alat dan bahan praktikum sesuai SOP',
+      'Mengevaluasi dan menganalisis laporan ilmiah mahasiswa'
+    ],
+    tech: ['Anatomi Hewan', 'K3 Laboratorium', 'SOP', 'Evaluasi laporan ilmiah']
   }
 ];

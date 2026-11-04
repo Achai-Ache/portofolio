@@ -6,6 +6,7 @@ import { HeroSection } from './components/hero/HeroSection';
 import { WelcomeAnimation } from './components/hero/WelcomeAnimation';
 import { EditorialProfile } from './components/profile/EditorialProfile';
 import { ProjectShowcase } from './components/projects/ProjectShowcase';
+import { ResearchSection } from './components/projects/ResearchSection';
 import { BiologyFocusSection } from './components/biology/BiologyFocusSection';
 import { JourneyTimeline } from './components/journey/JourneyTimeline';
 import { ContactSection } from './components/contact/ContactSection';
@@ -29,6 +30,7 @@ export function App() {
         <HeroSection />
         <EditorialProfile />
         <ProjectShowcase onOpenProject={setActiveModalProject} />
+        <ResearchSection onOpenProject={setActiveModalProject} />
         <BiologyFocusSection />
         <JourneyTimeline />
         <ContactSection />

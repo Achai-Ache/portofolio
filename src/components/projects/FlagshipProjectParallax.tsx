@@ -42,7 +42,7 @@ export const FlagshipSlideCard: React.FC<FlagshipSlideCardProps> = ({
       <div className="relative z-10 max-w-7xl mx-auto w-full pt-20 sm:pt-24 px-6 sm:px-12 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-[#fde047] text-[#0f172a] text-xs font-mono font-black border-2 border-[#0f172a] shadow-[3px_3px_0px_#0f172a]">
-            <span>0{index + 1} // {project.category === 'food' ? 'PANGAN & NUTRISI' : 'PANGAN & KOMUNITAS'}</span>
+            <span>0{index + 1} // {project.category === 'research' ? 'RISET BIOLOGI' : project.category === 'food' ? 'PANGAN & NUTRISI' : 'PANGAN & KOMUNITAS'}</span>
           </div>
 
           <span className="text-xs font-mono font-bold text-[#0f172a] bg-[#fffdf5]/90 px-3 py-1 rounded-lg border border-[#0f172a]/30 hidden sm:inline-block">

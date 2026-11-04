@@ -11,12 +11,14 @@ interface ProjectCardProps {
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect }) => {
   const categoryLabels = {
     food: 'Pangan & Nutrisi',
-    community: 'Pangan & Komunitas'
+    community: 'Pangan & Komunitas',
+    research: 'Penelitian Biologi'
   };
 
   const categoryAccents = {
     food: 'text-[#d97706] border-[#d97706]/40',
-    community: 'text-[#16a34a] border-[#16a34a]/40'
+    community: 'text-[#16a34a] border-[#16a34a]/40',
+    research: 'text-[#0284c7] border-[#0284c7]/40'
   };
 
   return (

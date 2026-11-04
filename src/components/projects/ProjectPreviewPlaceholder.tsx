@@ -33,7 +33,7 @@ export const ProjectPreviewPlaceholder: React.FC<ProjectPreviewPlaceholderProps>
 
         <div className="flex items-center gap-1.5 text-[10px] font-mono font-black px-2.5 py-0.5 rounded-md bg-[#fde047] text-[#0f172a] border border-[#0f172a]">
           {isMobile ? <Smartphone className="w-3 h-3" /> : <Globe className="w-3 h-3" />}
-          <span>{isMobile ? 'FLUTTER NATIVE' : 'WEB PLATFORM'}</span>
+          <span>{project.category === 'research' ? 'RISET BIOLOGI' : isMobile ? 'FLUTTER NATIVE' : 'WEB PLATFORM'}</span>
         </div>
       </div>
 
@@ -62,7 +62,7 @@ export const ProjectPreviewPlaceholder: React.FC<ProjectPreviewPlaceholderProps>
                 {project.title}
               </div>
               <p className="text-xs font-mono font-bold text-[#0284c7] mt-0.5">
-                Preview Screenshot Proyek
+                {project.category === 'research' ? 'Dokumentasi Penelitian' : 'Preview Proyek'}
               </p>
             </div>
 

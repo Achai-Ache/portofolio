@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import {
+  BookOpenCheck,
+  BriefcaseBusiness,
   GraduationCap,
   Calendar,
   CheckCircle2,
@@ -29,6 +31,22 @@ const categoryConfig: Record<
     tagText: 'text-[#0f172a]',
     tagBorder: 'border-[#0f172a]'
   },
+  internship: {
+    icon: BriefcaseBusiness,
+    nodeBg: 'bg-[#bae6fd]',
+    nodeText: 'text-[#0f172a]',
+    tagBg: 'bg-[#e0f2fe]',
+    tagText: 'text-[#0369a1]',
+    tagBorder: 'border-[#0f172a]'
+  },
+  teaching: {
+    icon: BookOpenCheck,
+    nodeBg: 'bg-[#d9f99d]',
+    nodeText: 'text-[#0f172a]',
+    tagBg: 'bg-[#ecfccb]',
+    tagText: 'text-[#3f6212]',
+    tagBorder: 'border-[#0f172a]'
+  }
 };
 
 export const JourneyTimeline: React.FC = () => {
@@ -47,7 +65,7 @@ export const JourneyTimeline: React.FC = () => {
   });
 
   return (
-    <section id="journey" ref={containerRef} className="relative z-20 -mt-1 w-full select-none py-28 overflow-hidden text-[#0f172a]">
+    <section id="experience" ref={containerRef} className="relative z-20 -mt-1 w-full select-none py-28 overflow-hidden text-[#0f172a]">
       {/* animated ocean waves, bubbles, and fish */}
       <JourneyOceanCanvas />
 
@@ -83,10 +101,10 @@ export const JourneyTimeline: React.FC = () => {
 
           <div className="space-y-1 sm:space-y-1.5">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-[#0f172a] tracking-tight leading-[1.08]">
-              Perjalanan Akademik
+              Pengalaman &amp; Pendidikan
             </h2>
             <p className="text-xs sm:text-base font-medium text-[#475569] max-w-2xl leading-relaxed">
-              Perjalanan saya sebagai mahasiswa Biologi Universitas Airlangga.
+              Pendidikan, pengalaman magang, dan kontribusi sebagai asisten praktikum.
             </p>
           </div>
         </motion.div>
@@ -169,7 +187,7 @@ export const JourneyTimeline: React.FC = () => {
                   {item.highlights && item.highlights.length > 0 && (
                     <div className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-[#fff9d4]/80 border border-[#0f172a]/20 sm:border-2 sm:border-[#0f172a]/15 space-y-1.5 sm:space-y-2">
                       <div className="text-[10px] sm:text-[11px] font-mono font-black uppercase tracking-wider text-[#475569]">
-                        Bidang Studi &amp; Minat
+                        Tanggung Jawab &amp; Kontribusi
                       </div>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 sm:gap-2">
                         {item.highlights.map((hl, hIdx) => (

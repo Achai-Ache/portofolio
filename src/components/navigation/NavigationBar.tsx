@@ -16,7 +16,8 @@ export const NavigationBar: React.FC = () => {
     { label: 'Profil', id: 'about' },
     { label: 'Karya', id: 'projects' },
     { label: 'Minat Biologi', id: 'focus' },
-    { label: 'Perjalanan', id: 'journey' },
+    { label: 'Pengalaman', id: 'experience' },
+    { label: 'Riset', id: 'research' },
     { label: 'Kontak', id: 'contact' },
   ];
 

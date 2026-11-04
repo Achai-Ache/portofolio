@@ -19,7 +19,8 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({ onOpenProject 
   const activeProject = onOpenProject ? null : localActiveProject;
 
   // featured flagship projects
-  const flagshipProjects = projectsData.filter((p) => p.featured);
+  const portfolioProjects = projectsData.filter((project) => project.category !== 'research');
+  const flagshipProjects = portfolioProjects.filter((project) => project.featured);
 
   // pinning scroll progress
   const { scrollYProgress } = useScroll({
@@ -97,7 +98,7 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({ onOpenProject 
           className="absolute inset-0 w-full h-full bg-[#02587a] shadow-[0_-8px_24px_rgba(15,23,42,0.35)]"
         >
           <FilteredProjectDock
-            projects={projectsData}
+            projects={portfolioProjects}
             selectedCategory={selectedCategory}
             onSelectCategory={setSelectedCategory}
             onSelectProject={handleSelect}

@@ -19,9 +19,11 @@ import { profileData } from '../../data/portfolioData';
 import { ContactOceanCanvas } from './ContactOceanCanvas';
 
 const inquiryTopics = [
-  { id: 'web', label: 'Full-Stack Web', subject: 'Inquiry: Full-Stack Web Development' },
-  { id: 'mobile', label: 'Mobile App (Flutter)', subject: 'Inquiry: Flutter Mobile App' },
-  { id: 'collab', label: 'Diskusi Santai', subject: 'Inquiry: Collaboration & Discussion' }
+  { id: 'research', label: 'Riset Biologi', subject: 'Diskusi Riset Biologi' },
+  { id: 'environment', label: 'Lingkungan & Konservasi', subject: 'Diskusi Lingkungan dan Konservasi' },
+  { id: 'fieldwork', label: 'Kegiatan Lapangan', subject: 'Kolaborasi Kegiatan Lapangan' },
+  { id: 'academic', label: 'Kolaborasi Akademik', subject: 'Kolaborasi Akademik' },
+  { id: 'general', label: 'Diskusi Umum', subject: 'Diskusi Umum' }
 ];
 
 export const ContactSection: React.FC = () => {
@@ -151,7 +153,7 @@ export const ContactSection: React.FC = () => {
                 Mari Berdiskusi &amp; Berkolaborasi
               </h2>
               <p className="text-xs sm:text-base text-[#475569] font-medium leading-relaxed max-w-2xl">
-                Punya ide proyek, kebutuhan rekayasa web/mobile, atau peluang kolaborasi? Hubungi saya langsung melalui email dan topik di bawah.
+                Ingin berdiskusi tentang riset biologi, kegiatan lapangan, lingkungan, atau peluang kolaborasi akademik? Pilih topik dan hubungi saya melalui email.
               </p>
             </div>
           </div>
@@ -331,7 +333,7 @@ export const ContactSection: React.FC = () => {
                       </span>
                     </div>
                     <p className="text-xs font-medium text-[#1e293b] leading-relaxed">
-                      Terima kasih sudah menjelajahi portofolio ini sampai tuntas! Selalu terbuka untuk ngobrol santai seputar web dev, mobile tech, atau kolaborasi proyek seru.
+                      Terima kasih sudah menjelajahi portofolio ini. Saya terbuka untuk berdiskusi tentang biologi, riset lapangan, lingkungan, dan kolaborasi akademik.
                     </p>
                   </div>
 

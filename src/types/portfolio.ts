@@ -1,10 +1,10 @@
-export type ProjectCategory = 'all' | 'food' | 'community';
+export type ProjectCategory = 'all' | 'food' | 'community' | 'research';
 
 export interface Project {
   id: string;
   title: string;
   subtitle: string;
-  category: 'food' | 'community';
+  category: 'food' | 'community' | 'research';
   summary: string;
   description: string;
   architecture: string[];
@@ -44,7 +44,7 @@ export interface ExperienceItem {
   organization: string;
   period: string;
   badge?: string;
-  category?: 'education' | 'bootcamp' | 'project' | 'security';
+  category?: 'education' | 'internship' | 'research' | 'teaching' | 'project';
   description: string;
   highlights?: string[];
   tech: string[];
