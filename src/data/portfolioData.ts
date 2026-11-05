@@ -7,7 +7,7 @@ export const profileData: ProfileData = {
   status: 'Terbuka untuk kolaborasi biologi dan lingkungan',
   bio: 'Mahasiswa Biologi Universitas Airlangga yang tertarik pada biodiversitas, ekologi, mikrobiologi, dan hubungan ekosistem dengan kehidupan sehari-hari.',
   experienceStart: 'Mahasiswa Biologi',
-  avatarUrl: '/WhatsApp%20Image%202026-11-04%20at%2012.41.54.jpeg',
+  avatarUrl: '/Profil.jpeg',
   interests: [
     'Ekologi dan biodiversitas',
     'Mikrobiologi',
